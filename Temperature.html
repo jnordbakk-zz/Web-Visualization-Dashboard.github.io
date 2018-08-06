@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="Wstyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"
+       type="text/javascript"></script>
+</head>
+
+<body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"
+         type="text/javascript"></script>
+   
+         <nav class="navbar">
+                <ul>
+                  <li>
+                    <a href="Comparison.html">Comparison</a>
+                  </li>
+                  <li>
+                    <a href="Data.html">Data</a>
+                  </li>
+                  <li>
+                  <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"aria-haspopup="true" aria-expanded="true">
+                          Plots
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="Temperature.html">Max Temperature</a></li>
+                        <li><a href="Humidity.html">Humidity</a></li>
+                        <li><a href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a href="Windspeed.html">Wind Speed</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+
+
+  <div id="title">
+    <h1>Lattitude</h1>
+  </div>
+
+  <main class="container">
+    <div id="main">
+      <div id="figure">
+        <h2 id="title2">Latitude vs. Temperature</h2>
+        <!-- <div id="figure"> -->
+        <img id="image" src="images/temperature.jpeg" alt="Lat">
+      <!-- </div> -->
+      <p>Temperatures rise in areas with higher latitudes .</p>
+    </div>
+
+
+    <div id="vizualizations">
+      <h2 id="title3">Vizualizations</h2>
+      <ul>
+          <div id="figure1">
+              <!-- <img class="image2" src="cloudiness.jpeg" alt="Lat"> -->
+              <a href="Cloudiness.html"> <img class="image2" src="images/cloudiness.jpeg" alt="Lat"></a>
+              <a href="Humidity.html"> <img class="image2" src="images/humidity.jpeg" alt="Lat"></a>
+
+            </div>
+          <div id="figure2">
+              <a href="Windspeed.html"> <img class="image2" src="images/windspeed.jpeg" alt="Lat"></a>
+              <img class="image2" src="images/temperature.jpeg" alt="Lat">
+              
+
+          </div>
+      </ul>
+    </div>
+    <div id="clear"></div>
+    </div>
+  </main>
+</body>
+
+</html>

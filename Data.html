@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="Wstyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"
+       type="text/javascript"></script>
+</head>
+ <body>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"
+             type="text/javascript"></script>
+       
+             <nav class="navbar">
+                    <ul>
+                      <li>
+                        <a href="Comparison.html">Comparison</a>
+                      </li>
+                      <li>
+                        <a href="Data.html">Data</a>
+                      </li>
+                      <li>
+                      <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"aria-haspopup="true" aria-expanded="true">
+                              Plots
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="Temperature.html">Max Temperature</a></li>
+                            <li><a href="Humidity.html">Humidity</a></li>
+                            <li><a href="Cloudiness.html">Cloudiness</a></li>
+                            <li><a href="Windspeed.html">Wind Speed</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+    
+    
+      <div id="title">
+        <h1>Lattitude</h1>
+      </div>
+
+        <div id='table-container'></div>
+        .
+         
+        <script>
+          CsvToHtmlTable.init({
+            csv_path: 'data.csv',
+            element: 'table-container', 
+            allow_download: true,
+            csv_options: {separator: ','},
+            datatables_options: {"paging": false}
+          });
+        </script>
+
+</body>
