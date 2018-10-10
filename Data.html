@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<!-- CSS Stylesheets with Relative Paths -->
+
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
+  <title>Code</title>
 
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="Wstyle.css">
+  <!-- CSS Stylesheets with Relative Paths -->
+   <link rel="stylesheet" type="text/css" href="Wstyle.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery  -->
   <script src="http://code.jquery.com/jquery-latest.min.js"
        type="text/javascript"></script>
 </head>
  <body>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- jQuery  -->
         <script src="http://code.jquery.com/jquery-latest.min.js"
              type="text/javascript"></script>
        
@@ -28,7 +27,7 @@
                         <a href="Comparison.html">Comparison</a>
                       </li>
                       <li>
-                        <a href="Data.html">Data</a>
+                        <a href="Data.html">Code</a>
                       </li>
                       <li>
                       <div class="dropdown">
@@ -49,20 +48,39 @@
     
     
       <div id="title">
-        <h1>Lattitude</h1>
+        <h1>Code Explanation</h1>
       </div>
 
-        <div id='table-container'></div>
-        .
+        
+        <div id="code">
+            <!-- <h2 id="title3">Vizualizations</h2> -->
+            
+            <p> <br/>Importing our Libraries.<br/> 
+              Create function get a random list of coordinated and store them in a dataframe<br/>
+            </p>
+            <img class="codeimage" src="images/weatherAPI/Code1.png" alt="Code">
+            <p> <br /></p>
+
+
+            <p> <br /> Use citipy to find the closest cities to those coordinates</p>
+            <img class="codeimage" src="images/weatherAPI/Code2.png" alt="Code">
+            <p> <br /></p>
+
+            <p> <br />Loop through dataframe and perfrom API call to OpenWeatherMap API to retrieve temperature, humidity, cloudiness and wind speed for each city<br/>
+            Since OpenWeatherMap doesnt have information on all cities, we need to include a try-excpet statement</p>
+            <img class="codeimage" src="images/weatherAPI/Code3.png" alt="Code">
+            <p> <br /></p>
+
+            <p> <br />Saving the dataframe as CSV file for further reference. (Can be skipped)</p>
+            <img class="codeimage" src="images/weatherAPI/Code4.png" alt="Code">
+            <p> <br /></p>
+
+            <p> <br />Using ploty to plt results in a scatter plot</p>
+            <img class="codeimage" src="images/weatherAPI/Code5.png" alt="Code">
+            <p> <br /></p>
+
+          </div>
          
-        <script>
-          CsvToHtmlTable.init({
-            csv_path: 'data.csv',
-            element: 'table-container', 
-            allow_download: true,
-            csv_options: {separator: ','},
-            datatables_options: {"paging": false}
-          });
-        </script>
+       
 
 </body>
